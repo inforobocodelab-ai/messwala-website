@@ -9,6 +9,7 @@ import { ComparisonSection } from './components/ComparisonSection';
 import { PartnerSection } from './components/PartnerSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { FAQSection } from './components/FAQSection';
+import { SplashScreen } from './components/SplashScreen';
 import { TrialBookingModal } from './components/TrialBookingModal';
 import { PartnerModal } from './components/PartnerModal';
 import { AppDownloadModal } from './components/AppDownloadModal';
@@ -24,6 +25,7 @@ export default function App() {
   const [mealType, setMealType] = useState<'all' | 'veg' | 'non-veg'>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [maxPrice, setMaxPrice] = useState<number>(3500);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   // Modal States
   const [trialTiffinId, setTrialTiffinId] = useState<string | null>(null);
@@ -77,17 +79,21 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF6F0] text-slate-900 font-sans antialiased selection:bg-red-500 selection:text-white flex flex-col justify-between">
-      
-      {/* Header Bar */}
-      <Header
-        selectedCity={selectedCity}
-        onSelectCity={setSelectedCity}
-        onOpenAppModal={() => setAppModalOpen(true)}
-        onOpenPartnerModal={() => setPartnerModalOpen(true)}
-        activeSection={activeSection}
-        onNavigate={handleNavigate}
-      />
+    <>
+      {/* Splash Screen */}
+      {isLoading && <SplashScreen onComplete={() => setIsLoading(false)} />}
+
+      <div className={`min-h-screen bg-[#FAF6F0] text-slate-900 font-sans antialiased selection:bg-red-500 selection:text-white flex flex-col justify-between ${isLoading ? 'hidden' : ''}`}>
+        
+        {/* Header Bar */}
+        <Header
+          selectedCity={selectedCity}
+          onSelectCity={setSelectedCity}
+          onOpenAppModal={() => setAppModalOpen(true)}
+          onOpenPartnerModal={() => setPartnerModalOpen(true)}
+          activeSection={activeSection}
+          onNavigate={handleNavigate}
+        />
 
       {/* Main Page Layout */}
       <main className="flex-1">
@@ -171,5 +177,6 @@ export default function App() {
       )}
 
     </div>
+    </>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { UtensilsCrossed, Smartphone, MapPin, Menu as MenuIcon, X, Sparkles, HeartHandshake } from 'lucide-react';
 import { CITIES } from '../data/mockData';
+import { TiffinLogo } from './TiffinLogo';
 
 interface HeaderProps {
   selectedCity: string;
@@ -42,15 +43,15 @@ export const Header: React.FC<HeaderProps> = ({
           
           {/* Brand Logo */}
           <div className="flex items-center space-x-3 cursor-pointer" onClick={() => handleNavClick('hero-section')}>
-            <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-red-600 to-orange-500 flex items-center justify-center text-white shadow-md shadow-red-500/20 transform hover:scale-105 transition-transform">
-              <UtensilsCrossed className="w-6 h-6 stroke-[2.2]" />
+            <div className="w-11 h-11 rounded-2xl bg-white flex items-center justify-center shadow-md shadow-red-500/20 transform hover:scale-105 transition-transform border-2 border-green-500">
+              <TiffinLogo className="w-8 h-8" />
             </div>
             <div>
               <div className="flex items-center space-x-1.5">
                 <span className="text-2xl font-black tracking-tight text-slate-900 font-sans">
                   Messwala<span className="text-red-500">.</span>
                 </span>
-             
+
               </div>
               <p className="text-[11px] font-medium text-slate-500 hidden sm:block">
                 Ghar ka khana, har roz.
