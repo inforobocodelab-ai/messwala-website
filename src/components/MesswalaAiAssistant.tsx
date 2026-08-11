@@ -12,7 +12,7 @@ export const MesswalaAiAssistant: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       sender: 'ai',
-      text: "Namaste! I am Messwala AI Assistant. Ask me anything about home tiffins, daily menus, or PG options near your college!",
+      text: "Namaste! I am Messwala AI Assistant. Ask me anything about home tiffins or daily menus near your college!",
     },
   ]);
   const [input, setInput] = useState('');

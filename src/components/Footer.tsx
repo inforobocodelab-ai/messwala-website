@@ -25,7 +25,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCity, onOpenAppModal, on
             </div>
 
             <p className="text-xs text-slate-400 font-medium leading-relaxed max-w-sm">
-              Connecting students and working professionals with authentic home cooks, tiffin services, and verified student PGs across India. Fresh, healthy, and affordable daily meals.
+              Connecting students and working professionals with authentic home cooks and tiffin services across India. Fresh, healthy, and affordable daily meals.
             </p>
 
             <div className="pt-2 flex items-center space-x-3 text-xs font-semibold text-slate-400">
@@ -60,9 +60,8 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCity, onOpenAppModal, on
             <h4 className="text-xs font-black uppercase text-white tracking-wider mb-4">Explore Messwala</h4>
             <ul className="space-y-2 text-xs font-medium text-slate-400">
               <li><a href="#tiffin-section" className="hover:text-red-400">Home Tiffin Plans</a></li>
-              <li><a href="#hostel-section" className="hover:text-red-400">PGs & Hostels</a></li>
               <li><a href="#menu-section" className="hover:text-red-400">Weekly Menu Rotation</a></li>
-              <li><a href="#why-section" className="hover:text-red-400">Messwala vs Hostel Mess</a></li>
+              <li><a href="#why-section" className="hover:text-red-400">Why Messwala</a></li>
               <li><button onClick={onOpenPartnerModal} className="hover:text-red-400">Register as Home Chef</button></li>
             </ul>
           </div>

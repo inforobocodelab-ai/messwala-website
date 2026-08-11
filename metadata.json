@@ -1,6 +1,6 @@
 {
   "name": "Messwala",
-  "description": "Discover and subscribe to home-cooked tiffin services, mess subscriptions, and verified PGs & hostels near you.",
+  "description": "Discover and subscribe to home-cooked tiffin services and mess subscriptions near you.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

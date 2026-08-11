@@ -52,24 +52,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             {/* Subtitle text matching screenshot */}
             <p className="text-base sm:text-lg text-slate-600 font-medium leading-relaxed max-w-2xl">
-              Hostel mess boring you to tears? Swiggy burning your wallet? Subscribe to a real kitchen near you — home-cooked meals, honest monthly pricing, delivered on your schedule.
+              Mess food boring you to tears? Swiggy burning your wallet? Subscribe to a real kitchen near you — home-cooked meals, honest monthly pricing, delivered on your schedule.
             </p>
-
-            {/* Key Value Pill Highlights */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 max-w-xl">
-              <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-xs p-2.5 rounded-2xl border border-orange-100 text-xs font-semibold text-slate-800">
-                <CheckCircle2 className="w-4 h-4 text-emerald-500 flex-shrink-0" />
-                <span>Pure Cow Ghee Roti</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-xs p-2.5 rounded-2xl border border-orange-100 text-xs font-semibold text-slate-800">
-                <CheckCircle2 className="w-4 h-4 text-emerald-500 flex-shrink-0" />
-                <span>Pause Meal Anytime</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-white/80 backdrop-blur-xs p-2.5 rounded-2xl border border-orange-100 text-xs font-semibold text-slate-800">
-                <CheckCircle2 className="w-4 h-4 text-emerald-500 flex-shrink-0" />
-                <span>Zero Soda & Preservatives</span>
-              </div>
-            </div>
 
             {/* App Store Download Badges */}
             <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -104,36 +88,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             </div>
 
-            {/* Web Search Link matching screenshot */}
-            <div className="pt-2 text-sm text-slate-600 font-medium">
-              Or{' '}
-              <button
-                onClick={onScrollToListings}
-                className="text-red-600 font-bold underline hover:text-red-700 underline-offset-4 cursor-pointer transition-colors"
-              >
-                browse all tiffin services in {selectedCity}
-              </button>{' '}
-              on the web.
-            </div>
 
-            {/* Live Stats */}
-            <div className="pt-6 border-t border-orange-200/60 flex items-center gap-8 text-slate-700 text-xs">
-              <div>
-                <span className="block text-2xl font-black text-slate-900">500+</span>
-                <span className="text-slate-500 font-medium">Active Students</span>
-              </div>
-              <div className="h-8 w-px bg-orange-200"></div>
-              <div>
-                <span className="block text-2xl font-black text-slate-900">50+</span>
-                <span className="text-slate-500 font-medium">Verified Home Cooks</span>
-              </div>
-              <div className="h-8 w-px bg-orange-200"></div>
-              <div>
-                <span className="block text-2xl font-black text-slate-900">4.8 ★</span>
-                <span className="text-slate-500 font-medium">Average Meal Rating</span>
-              </div>
-            </div>
-
+            
           </div>
 
           {/* Right Column: Interactive Phone Simulator */}

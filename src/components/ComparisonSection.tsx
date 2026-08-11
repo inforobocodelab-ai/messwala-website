@@ -31,7 +31,7 @@ export const ComparisonSection: React.FC = () => {
                   <div className="text-[10px] font-medium text-red-500">Ghar Ka Homemade Swad</div>
                 </th>
                 <th className="py-4 px-4 w-1/4 text-center">
-                  <div className="text-sm font-bold text-slate-800">College Hostel Mess</div>
+                  <div className="text-sm font-bold text-slate-800">College Mess</div>
                   <div className="text-[10px] font-normal text-slate-400">Traditional Mess</div>
                 </th>
                 <th className="py-4 px-4 w-1/4 text-center">
@@ -107,7 +107,7 @@ export const ComparisonSection: React.FC = () => {
 
               {/* Row 5: Delivery */}
               <tr className="hover:bg-slate-50/50">
-                <td className="py-4 px-4 text-slate-800 font-extrabold">Delivery to Room / Hostel Gate</td>
+                <td className="py-4 px-4 text-slate-800 font-extrabold">Delivery to Room / Gate</td>
                 <td className="py-4 px-4 bg-red-50/50 text-center text-emerald-700 font-bold rounded-b-2xl">
                   <span className="inline-flex items-center gap-1 bg-emerald-100 px-2.5 py-1 rounded-full">
                     <Check className="w-3.5 h-3.5" /> Free Hot Delivery

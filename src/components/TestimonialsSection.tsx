@@ -11,13 +11,13 @@ export const TestimonialsSection: React.FC = () => {
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center space-x-1.5 px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold mb-3">
             <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500" />
-            <span>Student & Parent Love</span>
+            <span>Student & Professionals Love</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight font-sans">
-            Loved by 12,000+ Students Across <span className="text-red-500">India</span>
+            Loved by 1000+ Students Across <span className="text-red-500">Nagpur</span>
           </h2>
           <p className="text-slate-600 text-sm font-medium mt-2">
-            Real stories from students in Nagpur, Kota, Pune, and Bengaluru who switched from hostel mess to Messwala.
+            Real stories from students in Nagpur area who switched to Messwala.
           </p>
         </div>
 

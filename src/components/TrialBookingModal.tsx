@@ -16,7 +16,7 @@ export const TrialBookingModal: React.FC<TrialBookingModalProps> = ({ tiffinId, 
   
   const [fullName, setFullName] = useState('');
   const [phone, setPhone] = useState('');
-  const [hostelAddress, setHostelAddress] = useState('');
+  const [deliveryAddress, setDeliveryAddress] = useState('');
   const [deliveryNote, setDeliveryNote] = useState('');
   const [promoCode, setPromoCode] = useState('MESSWALA50');
   const [discountApplied, setDiscountApplied] = useState(true);
@@ -61,7 +61,7 @@ export const TrialBookingModal: React.FC<TrialBookingModalProps> = ({ tiffinId, 
               <span className="text-xs font-bold uppercase tracking-wider text-emerald-600">Order Confirmed</span>
               <h3 className="text-2xl font-black text-slate-900">Your Tiffin is Booked!</h3>
               <p className="text-xs text-slate-500 font-medium max-w-sm mx-auto">
-                Thank you <strong className="text-slate-800">{fullName}</strong>. {tiffin.name} has received your {planType} plan request for <strong className="text-slate-800">{hostelAddress}</strong>.
+                Thank you <strong className="text-slate-800">{fullName}</strong>. {tiffin.name} has received your {planType} plan request for <strong className="text-slate-800">{deliveryAddress}</strong>.
               </p>
             </div>
 
@@ -213,9 +213,9 @@ export const TrialBookingModal: React.FC<TrialBookingModalProps> = ({ tiffinId, 
               <input
                 required
                 type="text"
-                placeholder="Hostel / Room No. & Street Address (e.g. Starlight PG, Room 204, Ram Nagar)"
-                value={hostelAddress}
-                onChange={(e) => setHostelAddress(e.target.value)}
+                placeholder="Delivery Address (Room/House, Street, Landmark)"
+                value={deliveryAddress}
+                onChange={(e) => setDeliveryAddress(e.target.value)}
                 className="w-full bg-slate-50 border border-slate-200 text-xs rounded-xl p-2.5 focus:ring-2 focus:ring-red-400 focus:outline-none"
               />
 

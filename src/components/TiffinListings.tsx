@@ -194,7 +194,7 @@ export const TiffinListings: React.FC<TiffinListingsProps> = ({
             </div>
 
             <div className="p-4 bg-orange-50 rounded-2xl border border-orange-100 text-xs text-orange-950 font-medium mb-6">
-              💡 <span className="font-bold">Weekly Rotation Promise:</span> Menu items are rotated daily so you never get bored of hostel life!
+              💡 <span className="font-bold">Weekly Rotation Promise:</span> Menu items are rotated daily so you never get bored with the menu!
             </div>
 
             {/* Menu Items Table / Accordion */}

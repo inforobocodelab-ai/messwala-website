@@ -24,7 +24,6 @@ export const Header: React.FC<HeaderProps> = ({
 
   const navItems = [
     { label: 'Tiffin Services', id: 'tiffin-section' },
-    { label: 'PGs & Hostels', id: 'hostel-section' },
     { label: 'Weekly Menu', id: 'menu-section' },
     { label: 'Why Messwala', id: 'why-section' },
     { label: 'Partner with us', id: 'partner-section' },
@@ -116,7 +115,7 @@ export const Header: React.FC<HeaderProps> = ({
               className="px-4 py-2.5 text-xs font-bold text-slate-700 hover:text-red-600 hover:bg-orange-100/50 rounded-full transition-all flex items-center space-x-1.5"
             >
               <HeartHandshake className="w-4 h-4 text-orange-500" />
-              <span>Hostel / Cook Partner</span>
+              <span>Cook Partner</span>
             </button>
 
             <button
@@ -175,7 +174,7 @@ export const Header: React.FC<HeaderProps> = ({
               }}
               className="w-full text-center py-2.5 text-xs font-bold text-slate-700 bg-orange-50 hover:bg-orange-100 rounded-xl"
             >
-              Become a Home Chef or Hostel Partner
+              Become a Home Chef Partner
             </button>
 
             <button

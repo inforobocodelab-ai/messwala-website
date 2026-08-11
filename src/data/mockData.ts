@@ -1,4 +1,4 @@
-import { TiffinProvider, HostelListing, Testimonial, CityOption } from '../types';
+import { TiffinProvider, Testimonial, CityOption } from '../types';
 
 export const CITIES: CityOption[] = [
   {
@@ -246,80 +246,7 @@ export const TIFFIN_PROVIDERS: TiffinProvider[] = [
   }
 ];
 
-export const HOSTEL_LISTINGS: HostelListing[] = [
-  {
-    id: 'hostel-1',
-    name: 'Starlight Student PG & Hostel',
-    type: 'Boys',
-    rating: 4.8,
-    reviewCount: 124,
-    city: 'Nagpur',
-    area: 'Ram Nagar',
-    distanceToMajorCollege: '300m from VNIT Gate 2',
-    monthlyRent: 5500,
-    deposit: 5000,
-    occupancyOptions: ['Single Sharing', 'Double Sharing', 'Triple Sharing'],
-    amenities: ['High Speed Wi-Fi 300Mbps', '3 Meals + Tea via Messwala', 'AC Rooms', 'Power Backup 24x7', 'Daily Housekeeping', 'Washing Machine'],
-    includesMess: true,
-    isZeroBrokerage: true,
-    image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=800&q=80',
-    address: 'Plot 42, Near Ram Nagar Square, Opp City Hospital, Nagpur'
-  },
-  {
-    id: 'hostel-2',
-    name: 'Aura Luxury Girls Living PG',
-    type: 'Girls',
-    rating: 4.9,
-    reviewCount: 98,
-    city: 'Nagpur',
-    area: 'Dharampeth',
-    distanceToMajorCollege: '500m from GS College & LIT',
-    monthlyRent: 6800,
-    deposit: 6000,
-    occupancyOptions: ['Single AC Room', 'Double AC Room'],
-    amenities: ['Biometric Security & CCTV', 'Messwala Home Food Included', 'Study Tables & Ergonomic Chairs', 'Attendant on Site', 'Fridge & Microwave'],
-    includesMess: true,
-    isZeroBrokerage: true,
-    image: 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80',
-    address: 'House 18, Canal Road, Dharampeth Extension, Nagpur'
-  },
-  {
-    id: 'hostel-3',
-    name: 'Scholars Nest Allen Residency',
-    type: 'Boys',
-    rating: 4.7,
-    reviewCount: 156,
-    city: 'Kota',
-    area: 'Talwandi',
-    distanceToMajorCollege: '200m from Allen Landmark',
-    monthlyRent: 7500,
-    deposit: 5000,
-    occupancyOptions: ['Single Room with Balcony', 'Double Room'],
-    amenities: ['Silent Study Zone 24/7', 'Air Conditioned', 'Messwala Tiffin Subscription Included', 'Laundry Service', 'Doctor on Call'],
-    includesMess: true,
-    isZeroBrokerage: true,
-    image: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80',
-    address: 'Sector 3, Talwandi Coaching Corridor, Kota'
-  },
-  {
-    id: 'hostel-4',
-    name: 'UrbanStay Co-Living Space',
-    type: 'Co-ed',
-    rating: 4.8,
-    reviewCount: 210,
-    city: 'Pune',
-    area: 'Kothrud',
-    distanceToMajorCollege: '400m from MIT WPU',
-    monthlyRent: 8500,
-    deposit: 8000,
-    occupancyOptions: ['Private Room', 'Twin Sharing'],
-    amenities: ['Gaming Lounge & Gym', 'High Speed Fibre', 'Messwala Kitchen On-Premise', 'Weekly Linen Change', 'EV Charging Station'],
-    includesMess: true,
-    isZeroBrokerage: true,
-    image: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80',
-    address: 'Opposite MIT Campus Gate 3, Paud Road, Kothrud, Pune'
-  }
-];
+// Hostel listings removed as PG & Hostel features are deprecated
 
 export const TESTIMONIALS: Testimonial[] = [
   {
@@ -328,7 +255,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'B.Tech CSE Student',
     institution: 'VNIT Nagpur',
     city: 'Nagpur',
-    comment: 'Hostel mess was unbearable and food delivery apps were draining my monthly allowance. Messwala connected me to Sunita Aunty’s Tiffin Adda! 4 soft phulkas, fresh paneer, and zero oiliness. Saved ₹3,500 every month!',
+    comment: 'Mess was unbearable and food delivery apps were draining my monthly allowance. Messwala connected me to Sunita Aunty’s Tiffin Adda! 4 soft phulkas, fresh paneer, and zero oiliness. Saved ₹3,500 every month!',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=200&q=80',
     tiffinName: 'The Tiffin Adda'
@@ -339,7 +266,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: 'NEET Aspirant',
     institution: 'Allen Kota',
     city: 'Kota',
-    comment: 'Being far from home in Kota is tough, but having hot home-cooked meals delivered right to my hostel room on time makes study hours so much easier. The pause feature when I visit home is seamless!',
+    comment: 'Being far from home in Kota is tough, but having hot home-cooked meals delivered right to my room on time makes study hours so much easier. The pause feature when I visit home is seamless!',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
     tiffinName: 'Annapurna Home Kitchen'
@@ -375,7 +302,7 @@ export const FAQS = [
     answer: 'Absolutely! When booking your subscription, you can add cooking instructions like "Less oil", "Extra Phulkas", "Jain Food", or "Mild Spice". Our home chefs personalize every tiffin box with love.'
   },
   {
-    question: 'How do PGs & Hostels integrate with Messwala?',
-    answer: 'Messwala partners with top student PGs and hostels. Residents can choose their preferred local home chef instead of eating rigid hostel food, giving students full control over what they eat every day.'
+    question: 'How do partners integrate with Messwala?',
+    answer: 'Messwala partners with verified home kitchens and mess owners. Customers can choose their preferred local home chef instead of rigid mess food, giving full control over meals and delivery.'
   }
 ];

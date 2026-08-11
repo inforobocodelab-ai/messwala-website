@@ -44,24 +44,7 @@ export interface TiffinProvider {
   phoneNumber?: string;
 }
 
-export interface HostelListing {
-  id: string;
-  name: string;
-  type: 'Boys' | 'Girls' | 'Co-ed';
-  rating: number;
-  reviewCount: number;
-  city: string;
-  area: string;
-  distanceToMajorCollege: string;
-  monthlyRent: number;
-  deposit: number;
-  occupancyOptions: string[];
-  amenities: string[];
-  includesMess: boolean;
-  isZeroBrokerage: boolean;
-  image: string;
-  address: string;
-}
+// HostelListing type removed (PG/Hostel features deprecated)
 
 export interface Testimonial {
   id: string;

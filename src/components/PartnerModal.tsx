@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { ChefHat, Building2, CheckCircle2 } from 'lucide-react';
+import { ChefHat } from 'lucide-react';
 
 interface PartnerModalProps {
   onClose: () => void;
 }
 
 export const PartnerModal: React.FC<PartnerModalProps> = ({ onClose }) => {
-  const [partnerType, setPartnerType] = useState<'cook' | 'hostel'>('cook');
+  const [partnerType] = useState<'cook'>('cook');
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [city, setCity] = useState('Nagpur');
@@ -21,7 +21,6 @@ export const PartnerModal: React.FC<PartnerModalProps> = ({ onClose }) => {
   return (
     <div className="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-xs flex items-center justify-center p-4">
       <div className="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 relative my-8 animate-in fade-in zoom-in-95 border border-orange-100 shadow-2xl">
-        
         <button
           onClick={onClose}
           className="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold flex items-center justify-center z-10"
@@ -36,7 +35,7 @@ export const PartnerModal: React.FC<PartnerModalProps> = ({ onClose }) => {
             </div>
             <h3 className="text-2xl font-black text-slate-900">Application Submitted!</h3>
             <p className="text-xs text-slate-600">
-              Our Messwala Partner Onboarding Manager in {city} will visit your kitchen/hostel within 24 hours for quality inspection & account setup.
+              Our Messwala Partner Onboarding Manager in {city} will visit your kitchen within 24 hours for quality inspection & account setup.
             </p>
             <button
               onClick={onClose}
@@ -52,37 +51,17 @@ export const PartnerModal: React.FC<PartnerModalProps> = ({ onClose }) => {
                 Become a Messwala Partner
               </span>
               <h3 className="text-xl font-black text-slate-900">Partner Registration</h3>
-              <p className="text-xs text-slate-500">
-                Join 450+ verified home cooks and hostel owners growing with Messwala.
-              </p>
+              <p className="text-xs text-slate-500">Join 450+ verified home cooks growing with Messwala.</p>
             </div>
 
-            {/* Type Selector */}
-            <div className="grid grid-cols-2 gap-2">
+            {/* Type Selector (cook only) */}
+            <div className="grid grid-cols-1 gap-2">
               <button
                 type="button"
-                onClick={() => setPartnerType('cook')}
-                className={`p-3 rounded-2xl border text-center transition-all ${
-                  partnerType === 'cook'
-                    ? 'border-red-500 bg-red-50/50 font-bold text-slate-900'
-                    : 'border-slate-200 bg-slate-50 text-slate-600'
-                }`}
+                className="p-3 rounded-2xl border text-center border-red-500 bg-red-50/50 font-bold text-slate-900"
               >
                 <ChefHat className="w-5 h-5 text-red-500 mx-auto mb-1" />
                 <div className="text-xs">Home Chef / Mess</div>
-              </button>
-
-              <button
-                type="button"
-                onClick={() => setPartnerType('hostel')}
-                className={`p-3 rounded-2xl border text-center transition-all ${
-                  partnerType === 'hostel'
-                    ? 'border-red-500 bg-red-50/50 font-bold text-slate-900'
-                    : 'border-slate-200 bg-slate-50 text-slate-600'
-                }`}
-              >
-                <Building2 className="w-5 h-5 text-amber-500 mx-auto mb-1" />
-                <div className="text-xs">PG / Hostel Owner</div>
               </button>
             </div>
 

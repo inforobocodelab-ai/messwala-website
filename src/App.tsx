@@ -3,7 +3,6 @@ import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { SearchAndFilter } from './components/SearchAndFilter';
 import { TiffinListings } from './components/TiffinListings';
-import { HostelListings } from './components/HostelListings';
 import { WeeklyMenuSection } from './components/WeeklyMenuSection';
 import { ComparisonSection } from './components/ComparisonSection';
 import { PartnerSection } from './components/PartnerSection';
@@ -130,8 +129,7 @@ export default function App() {
           onBookTrial={(id) => setTrialTiffinId(id)}
         />
 
-        {/* PGs & Hostels Section */}
-        <HostelListings selectedCity={selectedCity} />
+        {/* PGs & Hostels Section removed */}
 
         {/* Weekly Menu & Taste Explorer */}
         <WeeklyMenuSection onBookTrial={(id) => setTrialTiffinId(id)} />
@@ -139,7 +137,7 @@ export default function App() {
         {/* Why Messwala Comparison Section */}
         <ComparisonSection />
 
-        {/* Home Chef & Hostel Owner Partner Section */}
+        {/* Home Chef Partner Section */}
         <PartnerSection onOpenPartnerModal={() => setPartnerModalOpen(true)} />
 
         {/* Testimonials & Reviews */}
