@@ -127,7 +127,7 @@ export const TiffinListings: React.FC<TiffinListingsProps> = ({
                   </div>
 
                   {/* Pricing Breakdown */}
-                  <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
+                  {/* <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
                     <div>
                       <div className="text-[10px] uppercase font-bold text-slate-400">Monthly Plan</div>
                       <div className="text-2xl font-black text-slate-900">
@@ -142,10 +142,10 @@ export const TiffinListings: React.FC<TiffinListingsProps> = ({
                         ₹{tiffin.weeklyPrice}<span className="text-xs text-slate-400 font-normal">/wk</span>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* Action Buttons */}
-                  <div className="grid grid-cols-2 gap-2 pt-2">
+                  {/* <div className="grid grid-cols-2 gap-2 pt-2">
                     <button
                       onClick={() => setSelectedTiffinForMenu(tiffin)}
                       className="py-2.5 px-3 text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-xl transition-all flex items-center justify-center space-x-1"
@@ -161,7 +161,7 @@ export const TiffinListings: React.FC<TiffinListingsProps> = ({
                       <span>Book Trial</span>
                       <ChevronRight className="w-3.5 h-3.5" />
                     </button>
-                  </div>
+                  </div> */}
 
                 </div>
               </div>
