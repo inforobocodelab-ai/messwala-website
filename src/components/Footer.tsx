@@ -1,6 +1,7 @@
 import React from 'react';
-import { UtensilsCrossed, Heart, Phone, Mail, MapPin, ShieldCheck, Smartphone } from 'lucide-react';
+import { Heart, Phone, Mail, MapPin, ShieldCheck, Smartphone } from 'lucide-react';
 import { CITIES } from '../data/mockData';
+import { MesswalaBrandLogo } from './TiffinLogo';
 
 interface FooterProps {
   onSelectCity: (city: string) => void;
@@ -17,11 +18,8 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCity, onOpenAppModal, on
           
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-2xl bg-red-600 flex items-center justify-center text-white">
-                <UtensilsCrossed className="w-5 h-5" />
-              </div>
-              <span className="text-2xl font-black text-white">Messwala<span className="text-red-500">.</span></span>
+            <div className="flex items-center">
+              <MesswalaBrandLogo />
             </div>
 
             <p className="text-xs text-slate-400 font-medium leading-relaxed max-w-sm">

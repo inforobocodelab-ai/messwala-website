@@ -2,99 +2,167 @@ import React from 'react';
 
 export const TiffinLogo: React.FC<{ className?: string }> = ({ className = "" }) => {
   return (
-    <svg 
-      viewBox="0 0 64 64" 
-      fill="none" 
+    <svg
+      viewBox="0 0 100 100"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      {/* Handle */}
-      <path 
-        d="M32 8 L32 16" 
-        stroke="#1a1a1a" 
-        strokeWidth="4" 
+      {/* Handle Arch */}
+      <path
+        d="M 31 29 C 31 13, 69 13, 69 29"
+        stroke="#FF5000"
+        strokeWidth="5.5"
         strokeLinecap="round"
+        fill="none"
       />
-      <rect 
-        x="26" 
-        y="4" 
-        width="12" 
-        height="6" 
-        rx="3" 
-        fill="#1a1a1a"
+
+      {/* Top Cap / Knob */}
+      <rect x="42" y="24" width="16" height="5" rx="2.5" fill="#FF5000" />
+
+      {/* Lid Dome */}
+      <path
+        d="M 26 35 C 26 29, 74 29, 74 35 L 74 38 L 26 38 Z"
+        fill="#FF5000"
       />
-      
-      {/* Top container */}
-      <rect 
-        x="14" 
-        y="16" 
-        width="36" 
-        height="10" 
-        rx="2" 
-        fill="#22c55e"
-        stroke="#16a34a" 
-        strokeWidth="1"
+
+      {/* Top Tier Container */}
+      <rect x="26" y="40" width="48" height="17" rx="3" fill="#FF5000" />
+
+      {/* Bottom Tier Container */}
+      <path
+        d="M 26 59 L 74 59 L 74 72 C 74 78, 26 78, 26 72 Z"
+        fill="#FF5000"
       />
-      
-      {/* Middle container with yellow band */}
-      <rect 
-        x="14" 
-        y="27" 
-        width="36" 
-        height="10" 
-        rx="2" 
-        fill="#22c55e"
-        stroke="#16a34a" 
-        strokeWidth="1"
+
+      {/* Side Latches Left */}
+      <rect x="22" y="36" width="3" height="11" rx="1.5" fill="#FF5000" />
+      <rect x="22" y="58" width="3" height="11" rx="1.5" fill="#FF5000" />
+
+      {/* Side Latches Right */}
+      <rect x="75" y="36" width="3" height="11" rx="1.5" fill="#FF5000" />
+      <rect x="75" y="58" width="3" height="11" rx="1.5" fill="#FF5000" />
+
+      {/* Central Location Pin (White Silhouette) */}
+      <path
+        d="M 50 78 C 39 65 35 56 35 48 C 35 39 41.7 33 50 33 C 58.3 33 65 39 65 48 C 65 56 61 65 50 78 Z"
+        fill="white"
       />
-      <rect 
-        x="14" 
-        y="30" 
-        width="36" 
-        height="4" 
-        fill="#fbbf24"
-      />
-      
-      {/* Bottom container */}
-      <rect 
-        x="14" 
-        y="38" 
-        width="36" 
-        height="10" 
-        rx="2" 
-        fill="#22c55e"
-        stroke="#16a34a" 
-        strokeWidth="1"
-      />
-      
-      {/* Container edges/details */}
-      <rect 
-        x="16" 
-        y="18" 
-        width="32" 
-        height="6" 
-        rx="1" 
-        fill="#16a34a" 
-        fillOpacity="0.3"
-      />
-      <rect 
-        x="16" 
-        y="29" 
-        width="32" 
-        height="6" 
-        rx="1" 
-        fill="#16a34a" 
-        fillOpacity="0.3"
-      />
-      <rect 
-        x="16" 
-        y="40" 
-        width="32" 
-        height="6" 
-        rx="1" 
-        fill="#16a34a" 
-        fillOpacity="0.3"
-      />
+
+      {/* Inner Pin Hole (Orange) */}
+      <circle cx="50" cy="46" r="6.5" fill="#FF5000" />
+
+      {/* Inner Pin Center Dot (White) */}
+      <circle cx="50" cy="46" r="3" fill="white" />
     </svg>
   );
 };
+
+interface BrandLogoProps {
+  className?: string;
+  height?: number | string;
+}
+
+export const MesswalaBrandLogo: React.FC<BrandLogoProps> = ({
+  className = "",
+}) => {
+  return (
+    <svg
+      viewBox="0 0 300 64"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`h-11 sm:h-12 w-auto select-none ${className}`}
+    >
+      {/* Tiffin Icon on Left */}
+      <g transform="translate(2, 2)">
+        {/* Handle Arch */}
+        <path
+          d="M 19 18 C 19 8, 43 8, 43 18"
+          stroke="#FF5000"
+          strokeWidth="3.6"
+          strokeLinecap="round"
+          fill="none"
+        />
+
+        {/* Top Cap / Knob */}
+        <rect x="26" y="15" width="10" height="3" rx="1.5" fill="#FF5000" />
+
+        {/* Lid Dome */}
+        <path
+          d="M 15 22 C 15 18, 47 18, 47 22 L 47 24 L 15 24 Z"
+          fill="#FF5000"
+        />
+
+        {/* Top Tier Container */}
+        <rect x="15" y="25" width="32" height="11" rx="2" fill="#FF5000" />
+
+        {/* Bottom Tier Container */}
+        <path
+          d="M 15 37 L 47 37 L 47 46 C 47 50, 15 50, 15 46 Z"
+          fill="#FF5000"
+        />
+
+        {/* Side Latches Left */}
+        <rect x="12" y="23" width="2" height="7" rx="1" fill="#FF5000" />
+        <rect x="12" y="37" width="2" height="7" rx="1" fill="#FF5000" />
+
+        {/* Side Latches Right */}
+        <rect x="48" y="23" width="2" height="7" rx="1" fill="#FF5000" />
+        <rect x="48" y="37" width="2" height="7" rx="1" fill="#FF5000" />
+
+        {/* Central Location Pin (White Silhouette) */}
+        <path
+          d="M 31 50 C 24 42 21 36 21 31 C 21 25 25.3 21 31 21 C 36.7 21 41 25 41 31 C 41 36 38 42 31 50 Z"
+          fill="white"
+        />
+
+        {/* Inner Pin Hole (Orange) */}
+        <circle cx="31" cy="30" r="4.2" fill="#FF5000" />
+
+        {/* Inner Pin Center Dot (White) */}
+        <circle cx="31" cy="30" r="2" fill="white" />
+      </g>
+
+      {/* Brand Title: Mess (Orange) + wala (Dark Slate) */}
+      <text
+        x="62"
+        y="35"
+        fontFamily="Inter, system-ui, -apple-system, sans-serif"
+        fontWeight="900"
+        fontSize="30"
+        letterSpacing="-0.5px"
+      >
+        <tspan fill="#FF5000">Mess</tspan>
+        <tspan fill="#1E293B">Wala</tspan>
+      </text>
+
+      {/* Tagline Below with Accent Lines and Dots */}
+      <g transform="translate(62, 49)">
+        {/* Left Accent Dot & Line */}
+        <circle cx="2" cy="-3" r="1.8" fill="#FF5000" />
+        <line x1="3" y1="-3" x2="15" y2="-3" stroke="#FF5000" strokeWidth="1.5" strokeLinecap="round" />
+
+        {/* Tagline Text */}
+        <text
+          x="18"
+          y="0"
+          fontFamily="Inter, system-ui, -apple-system, sans-serif"
+          fontWeight="800"
+          fontSize="9.2"
+          fill="#1E293B"
+          letterSpacing="0.8px"
+        >
+          Taste of Home, Delivered
+        </text>
+
+        {/* Right Accent Line & Dot */}
+        <line x1="155" y1="-3" x2="168" y2="-3" stroke="#FF5000" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="172" cy="-3" r="1.8" fill="#FF5000" />
+      </g>
+    </svg>
+  );
+};
+
+
+
+

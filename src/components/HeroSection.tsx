@@ -18,17 +18,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
   return (
     <section id="hero-section" className="relative bg-[#FAF6F0] overflow-hidden pt-8 pb-16 lg:pt-12 lg:pb-24 border-b border-orange-100/80">
-      
+
       {/* Soft background decorative glows */}
       <div className="absolute top-1/4 left-10 w-96 h-96 bg-orange-200/30 rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-red-200/30 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           {/* Left Column: Hero Copy & Actions */}
           <div className="lg:col-span-7 space-y-6 text-left">
-            
+
             {/* Tagline Badge */}
             {/* <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-orange-100/80 border border-orange-200/80 text-orange-900 text-xs font-bold tracking-wide">
               <Sparkles className="w-3.5 h-3.5 text-orange-600 animate-pulse" />
@@ -37,9 +37,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             {/* Headline matching screenshot */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 font-sans leading-[1.12]">
-              Khana that tastes like{' '}
+              Ghar se door ho,{' '}
               <span className="text-red-500 relative inline-block">
-                someone cares.
+                lekin ghar ke khane se nahi.
                 <svg
                   className="absolute -bottom-2 left-0 w-full h-3 text-red-200 -z-10"
                   viewBox="0 0 100 20"
@@ -52,12 +52,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             {/* Subtitle text matching screenshot */}
             <p className="text-base sm:text-lg text-slate-600 font-medium leading-relaxed max-w-2xl">
-              Mess food boring you to tears? Swiggy burning your wallet? Subscribe to a real kitchen near you — home-cooked meals, honest monthly pricing, delivered on your schedule.
+              Messwala makes everyday meals simple, affordable, and homely. Find trusted local messes, tiffin services, and home kitchens near you, choose a plan that works for you, and get your daily meals without the stress of cooking or expensive food orders.
             </p>
 
             {/* App Store Download Badges */}
             <div className="pt-2 flex flex-wrap items-center gap-4">
-              
+
               {/* Apple App Store */}
               <button
                 onClick={onOpenAppModal}
@@ -89,7 +89,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
 
-            
+
           </div>
 
           {/* Right Column: Interactive Phone Simulator */}

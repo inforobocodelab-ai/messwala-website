@@ -71,21 +71,7 @@ export const ComparisonSection: React.FC = () => {
                 </td>
               </tr>
 
-              {/* Row 3: Food Quality & Oil */}
-              <tr className="hover:bg-slate-50/50">
-                <td className="py-4 px-4 text-slate-800 font-extrabold">Cooking Oil & Soda</td>
-                <td className="py-4 px-4 bg-red-50/50 text-center text-emerald-700 font-bold">
-                  <span className="inline-flex items-center gap-1 bg-emerald-100 px-2.5 py-1 rounded-full">
-                    <Check className="w-3.5 h-3.5" /> Pure Ghee & Less Oil
-                  </span>
-                </td>
-                <td className="py-4 px-4 text-center text-amber-600">
-                  High Palm Oil / Heavy Soda
-                </td>
-                <td className="py-4 px-4 text-center text-red-500">
-                  Heavy Spices & Commercial Butter
-                </td>
-              </tr>
+
 
               {/* Row 4: Pause Subscription */}
               <tr className="hover:bg-slate-50/50">

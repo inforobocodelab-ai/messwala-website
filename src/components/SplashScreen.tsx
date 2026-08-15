@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { MapPin, Clock, ShieldCheck, Users } from 'lucide-react';
+import { TiffinLogo } from './TiffinLogo';
+import { MapPin, ShieldCheck, Clock, Award } from 'lucide-react';
 
 interface SplashScreenProps {
   onComplete: () => void;
@@ -20,89 +21,79 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
         }
         return prev + 2;
       });
-    }, 30);
+    }, 28);
 
     return () => clearInterval(interval);
   }, [onComplete]);
 
   const features = [
-    { icon: <MapPin className="w-6 h-6" />, title: 'NEARBY MESS' },
-    { icon: <ShieldCheck className="w-6 h-6" />, title: 'HYGIENIC FOOD' },
-    { icon: <Clock className="w-6 h-6" />, title: 'ON TIME DELIVERY' },
-    { icon: <Users className="w-6 h-6" />, title: 'TRUSTED BY STUDENTS' },
+    { icon: <MapPin className="w-4 h-4 text-orange-500" />, label: 'Nearby Messes' },
+    { icon: <ShieldCheck className="w-4 h-4 text-emerald-500" />, label: 'Hygienic Meals' },
+    { icon: <Clock className="w-4 h-4 text-amber-500" />, label: 'On Time Delivery' },
+    { icon: <Award className="w-4 h-4 text-red-500" />, label: 'Trusted by Students' },
   ];
 
   return (
     <div
-      className={`fixed inset-0 z-[100] bg-gradient-to-br from-orange-50 to-red-50 flex flex-col items-center justify-center transition-opacity duration-500 ${
-        fadeOut ? 'opacity-0' : 'opacity-100'
-      }`}
+      className={`fixed inset-0 z-[100] bg-gradient-to-br from-[#FFF9F5] via-[#FFF3EB] to-[#FEEAE0] flex flex-col items-center justify-center p-6 transition-opacity duration-500 select-none ${fadeOut ? 'opacity-0 scale-98 pointer-events-none' : 'opacity-100 scale-100'
+        }`}
     >
-      {/* Black Tiffin in Yellow Circle */}
-      <div className="relative mb-8 animate-bounce">
-        <svg viewBox="0 0 120 120" className="w-32 h-32">
-          {/* Yellow Circle Background */}
-          <circle cx="60" cy="60" r="55" fill="#fbbf24" />
-          
-          {/* Handle */}
-          <path d="M60 15 L60 28" stroke="#1a1a1a" strokeWidth="5" strokeLinecap="round" />
-          <rect x="50" y="8" width="20" height="8" rx="4" fill="#1a1a1a" />
-          
-          {/* Top container */}
-          <rect x="28" y="30" width="64" height="18" rx="3" fill="#1a1a1a" />
-          
-          {/* Middle container */}
-          <rect x="28" y="50" width="64" height="18" rx="3" fill="#1a1a1a" />
-          
-          {/* Bottom container */}
-          <rect x="28" y="70" width="64" height="18" rx="3" fill="#1a1a1a" />
-          
-          {/* Container highlights */}
-          <rect x="32" y="34" width="56" height="10" rx="2" fill="#333" fillOpacity="0.5" />
-          <rect x="32" y="54" width="56" height="10" rx="2" fill="#333" fillOpacity="0.5" />
-          <rect x="32" y="74" width="56" height="10" rx="2" fill="#333" fillOpacity="0.5" />
-        </svg>
+      {/* Glow background effect */}
+      <div className="absolute w-80 h-80 bg-orange-400/15 rounded-full blur-3xl animate-pulse pointer-events-none" />
+
+      {/* Brand Icon Badge */}
+      <div className="relative mb-6">
+        <div className="w-36 h-36 rounded-3xl bg-white p-4 shadow-2xl shadow-orange-500/20 border-2 border-orange-100 flex items-center justify-center transform hover:scale-105 transition-transform duration-300 animate-bounce">
+          <TiffinLogo className="w-28 h-28 drop-shadow-md" />
+        </div>
+        <div className="absolute -bottom-2 -right-2 bg-orange-500 text-white p-2 rounded-full shadow-lg border-2 border-white">
+          <MapPin className="w-4 h-4 animate-pulse" />
+        </div>
       </div>
 
       {/* Brand Name */}
-      <h1 className="text-5xl font-black text-slate-900 mb-2 tracking-tight">
-        Messwala
-      </h1>
-      
+      <div className="text-center mb-2">
+        <h1 className="text-5xl font-black tracking-tight text-slate-900 font-sans flex items-center justify-center">
+          Messwala<span className="text-orange-600">.</span>
+        </h1>
+      </div>
+
       {/* Tagline */}
-      <p className="text-lg font-semibold text-orange-600 mb-12">
+      <p className="text-base font-bold text-orange-600/90 tracking-wide uppercase text-xs mb-8 bg-orange-100/60 px-4 py-1.5 rounded-full border border-orange-200/60">
         Taste Of Home, Delivered
       </p>
 
-      {/* Feature Icons
-      <div className="grid grid-cols-2 gap-6 mb-12">
-        {features.map((feature, index) => (
+      {/* Feature Badges */}
+      {/* <div className="flex flex-wrap justify-center gap-2 max-w-md mb-10">
+        {features.map((item, idx) => (
           <div
-            key={index}
-            className="flex flex-col items-center space-y-2 animate-pulse"
-            style={{ animationDelay: `${index * 0.2}s` }}
+            key={idx}
+            className="flex items-center space-x-1.5 bg-white/80 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-xs border border-orange-100/80 text-xs font-semibold text-slate-700"
           >
-            <div className="w-14 h-14 bg-white rounded-2xl shadow-lg flex items-center justify-center text-orange-500">
-              {feature.icon}
-            </div>
-            <span className="text-xs font-bold text-slate-700 text-center">
-              {feature.title}
-            </span>
+            {item.icon}
+            <span>{item.label}</span>
           </div>
         ))}
       </div> */}
 
-      {/* Loading Progress Bar */}
-      <div className="w-64 h-2 bg-orange-200 rounded-full overflow-hidden">
-        <div
-          className="h-full bg-gradient-to-r from-orange-500 to-red-500 transition-all duration-300 ease-out"
-          style={{ width: `${progress}%` }}
-        />
+      {/* Loading Progress Bar Container */}
+      <div className="w-72 max-w-full space-y-2.5 text-center">
+        <div className="w-full h-2.5 bg-orange-200/60 rounded-full overflow-hidden p-0.5 shadow-inner border border-orange-200/40">
+          <div
+            className="h-full bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 rounded-full transition-all duration-300 ease-out shadow-sm"
+            style={{ width: `${progress}%` }}
+          />
+        </div>
+
+        <div className="flex justify-between items-center text-xs font-semibold text-slate-500 px-1">
+          <span className="flex items-center space-x-1">
+            <span className="w-2 h-2 rounded-full bg-orange-500 animate-ping inline-block" />
+            <span>Finding best messes near you...</span>
+          </span>
+          <span className="text-orange-600 font-bold font-mono">{progress}%</span>
+        </div>
       </div>
-      
-      <p className="text-sm text-slate-500 mt-3 font-medium">
-        Loading delicious meals... {progress}%
-      </p>
     </div>
   );
 };
+

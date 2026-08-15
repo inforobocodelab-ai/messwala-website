@@ -8,6 +8,8 @@ import { ComparisonSection } from './components/ComparisonSection';
 import { PartnerSection } from './components/PartnerSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { FAQSection } from './components/FAQSection';
+import { BlogSection } from './components/BlogSection';
+import { OurStorySection } from './components/OurStorySection';
 import { SplashScreen } from './components/SplashScreen';
 import { TrialBookingModal } from './components/TrialBookingModal';
 import { PartnerModal } from './components/PartnerModal';
@@ -139,6 +141,12 @@ export default function App() {
 
         {/* Home Chef Partner Section */}
         <PartnerSection onOpenPartnerModal={() => setPartnerModalOpen(true)} />
+
+        {/* Blog & Student Guides Section */}
+        <BlogSection />
+
+        {/* Our Story Section */}
+        <OurStorySection />
 
         {/* Testimonials & Reviews */}
         <TestimonialsSection />

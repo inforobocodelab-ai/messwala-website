@@ -4,7 +4,7 @@ import { Star, Quote, Heart } from 'lucide-react';
 
 export const TestimonialsSection: React.FC = () => {
   return (
-    <section id="story-section" className="py-20 bg-[#FAF6F0]">
+    <section id="testimonials-section" className="py-20 bg-[#FAF6F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

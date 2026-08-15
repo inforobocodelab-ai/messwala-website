@@ -13,9 +13,9 @@ export const PartnerSection: React.FC<PartnerSectionProps> = ({ onOpenPartnerMod
   return (
     <section id="partner-section" className="py-20 bg-[#FAF6F0] border-t border-orange-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
-          
+
           {/* Subtle background glow */}
           <div className="absolute top-0 right-0 w-80 h-80 bg-red-500/20 rounded-full blur-3xl"></div>
 
@@ -29,11 +29,11 @@ export const PartnerSection: React.FC<PartnerSectionProps> = ({ onOpenPartnerMod
               </div>
 
               <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-white font-sans leading-tight">
-                Turn Your Home Kitchen into a <span className="text-red-400">Thriving Business</span>
+                From Home Kitchen to a  <span className="text-red-400">Trusted Local Food Brand</span>
               </h2>
 
               <p className="text-slate-300 text-sm font-medium leading-relaxed">
-                Are you a passionate home cook, aunty, or mess owner? Connect directly with thousands of students and working professionals near colleges like VNIT, MIT, COEP, Allen Kota, and Christ University.
+                Turn your cooking skills into a business by serving students and working professionals around you. With MessWala, you can showcase your menu, reach new customers, and grow your customer base.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -54,14 +54,14 @@ export const PartnerSection: React.FC<PartnerSectionProps> = ({ onOpenPartnerMod
                 </div>
               </div>
 
-              <div className="pt-4">
+              {/* <div className="pt-4">
                 <button
                   // onClick={onOpenPartnerModal}
                   className="px-8 py-3.5 text-sm font-extrabold text-slate-950 bg-red-400 hover:bg-red-300 rounded-full shadow-lg shadow-red-500/20 transform hover:-translate-y-0.5 transition-all"
                 >
                   Register Your Kitchen Free →
                 </button>
-              </div>
+              </div> */}
             </div>
 
           </div>
