@@ -93,7 +93,7 @@ export const FAQSection: React.FC = () => {
               Our support team is available 24/7 to help you with your tiffin subscription.
             </p>
             <a
-              href="tel:+919823011200"
+              href="tel:+9181496 91205"
               className="inline-flex items-center space-x-2 px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-semibold rounded-full transition-all shadow-lg shadow-red-500/25"
             >
               <span>Call Support</span>

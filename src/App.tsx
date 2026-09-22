@@ -3,6 +3,7 @@ import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { SearchAndFilter } from './components/SearchAndFilter';
 import { TiffinListings } from './components/TiffinListings';
+import { BuildYourTiffinSection } from './components/BuildYourTiffinSection';
 import { WeeklyMenuSection } from './components/WeeklyMenuSection';
 import { ComparisonSection } from './components/ComparisonSection';
 import { PartnerSection } from './components/PartnerSection';
@@ -131,7 +132,8 @@ export default function App() {
           onBookTrial={(id) => setTrialTiffinId(id)}
         />
 
-        {/* PGs & Hostels Section removed */}
+        {/* Build Your Custom Tiffin Section */}
+        <BuildYourTiffinSection onBookTrial={(id) => setTrialTiffinId(id)} />
 
         {/* Weekly Menu & Taste Explorer */}
         <WeeklyMenuSection onBookTrial={(id) => setTrialTiffinId(id)} />
