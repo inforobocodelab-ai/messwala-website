@@ -97,7 +97,7 @@ export const FAQSection: React.FC = () => {
               className="inline-flex items-center space-x-2 px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-semibold rounded-full transition-all shadow-lg shadow-red-500/25"
             >
               <span>Call Support</span>
-              <span className="text-sm font-normal">+91 98230 11200</span>
+              <span className="text-sm font-normal">+91 81496 91205</span>
             </a>
           </div>
         </div>

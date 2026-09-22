@@ -35,7 +35,7 @@ export const ComparisonSection: React.FC = () => {
                   <div className="text-[10px] font-normal text-slate-400">Traditional Mess</div>
                 </th>
                 <th className="py-4 px-4 w-1/4 text-center">
-                  <div className="text-sm font-bold text-slate-800">Food Apps (Swiggy/Zomato)</div>
+                  <div className="text-sm font-bold text-slate-800">Food Apps (Other APP)</div>
                   <div className="text-[10px] font-normal text-slate-400">Restaurant Deliveries</div>
                 </th>
               </tr>

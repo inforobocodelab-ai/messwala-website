@@ -70,7 +70,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCity, onOpenAppModal, on
             <div className="space-y-2.5 text-xs text-slate-400">
               <p className="flex items-center space-x-2">
                 <Phone className="w-3.5 h-3.5 text-red-400" />
-                <span>+91 98230 11200 </span>
+                <span>+91 81496 91205 </span>
               </p>
               <p className="flex items-center space-x-2">
                 <Mail className="w-3.5 h-3.5 text-red-400" />
