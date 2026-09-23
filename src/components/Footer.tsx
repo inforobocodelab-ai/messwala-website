@@ -19,7 +19,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCity, onOpenAppModal, on
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center">
-              <MesswalaBrandLogo />
+              <MesswalaBrandLogo variant="dark" />
             </div>
 
             <p className="text-xs text-slate-400 font-medium leading-relaxed max-w-sm">

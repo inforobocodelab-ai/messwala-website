@@ -83,13 +83,13 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Action CTAs */}
           <div className="hidden sm:flex items-center space-x-3">
-            <button
+            {/* <button
               onClick={onOpenPartnerModal}
               className="px-4 py-2.5 text-xs font-bold text-slate-700 hover:text-red-600 hover:bg-orange-100/50 rounded-full transition-all flex items-center space-x-1.5 cursor-pointer"
             >
               <HeartHandshake className="w-4 h-4 text-orange-500" />
               <span>Cook Partner</span>
-            </button>
+            </button> */}
 
             <button
               onClick={onOpenAppModal}

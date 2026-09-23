@@ -61,17 +61,23 @@ export const TiffinLogo: React.FC<{ className?: string }> = ({ className = "" })
 interface BrandLogoProps {
   className?: string;
   height?: number | string;
+  variant?: 'light' | 'dark';
 }
 
 export const MesswalaBrandLogo: React.FC<BrandLogoProps> = ({
   className = "",
+  variant = "light",
 }) => {
+  const isDark = variant === 'dark';
+  const secondaryColor = isDark ? '#FFFFFF' : '#1E293B';
+  const taglineColor = isDark ? '#F1F5F9' : '#1E293B';
+
   return (
     <svg
       viewBox="0 0 300 64"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`h-11 sm:h-12 w-auto select-none ${className}`}
+      className={`h-11 sm:h-14 w-auto select-none ${className}`}
     >
       {/* Tiffin Icon on Left */}
       <g transform="translate(2, 2)">
@@ -85,7 +91,7 @@ export const MesswalaBrandLogo: React.FC<BrandLogoProps> = ({
         />
 
         {/* Top Cap / Knob */}
-        <rect x="26" y="15" width="10" height="3" rx="1.5" fill="#FF5000" />
+        <rect x="26" y="15" width="10" height="4" rx="1.5" fill="#FF5000" />
 
         {/* Lid Dome */}
         <path
@@ -123,41 +129,41 @@ export const MesswalaBrandLogo: React.FC<BrandLogoProps> = ({
         <circle cx="31" cy="30" r="2" fill="white" />
       </g>
 
-      {/* Brand Title: Mess (Orange) + wala (Dark Slate) */}
+      {/* Brand Title: Mess (Orange) + wala (Dark Slate / White in Dark Mode) */}
       <text
         x="62"
         y="35"
         fontFamily="Inter, system-ui, -apple-system, sans-serif"
         fontWeight="900"
         fontSize="30"
-        letterSpacing="-0.5px"
+        letterSpacing="2px"
       >
         <tspan fill="#FF5000">Mess</tspan>
-        <tspan fill="#1E293B">Wala</tspan>
+        <tspan fill={secondaryColor}>wala</tspan>
       </text>
 
       {/* Tagline Below with Accent Lines and Dots */}
       <g transform="translate(62, 49)">
         {/* Left Accent Dot & Line */}
         <circle cx="2" cy="-3" r="1.8" fill="#FF5000" />
-        <line x1="3" y1="-3" x2="15" y2="-3" stroke="#FF5000" strokeWidth="1.5" strokeLinecap="round" />
+        <line x1="3" y1="-3" x2="10" y2="-3" stroke="#FF5000" strokeWidth="1.5" strokeLinecap="round" />
 
         {/* Tagline Text */}
         <text
-          x="18"
+          x="10"
           y="0"
           fontFamily="Inter, system-ui, -apple-system, sans-serif"
           fontWeight="800"
           fontSize="9.2"
-          fill="#1E293B"
+          fill={taglineColor}
           letterSpacing="0.8px"
         >
           Taste of Home, Delivered
         </text>
 
         {/* Right Accent Line & Dot */}
-        <line x1="155" y1="-3" x2="168" y2="-3" stroke="#FF5000" strokeWidth="1.5" strokeLinecap="round" />
-        <circle cx="172" cy="-3" r="1.8" fill="#FF5000" />
+        <line x1="145" y1="-3" x2="152" y2="-3" stroke="#FF5000" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="155" cy="-3" r="1.8" fill="#FF5000" />
       </g>
     </svg>
   );
