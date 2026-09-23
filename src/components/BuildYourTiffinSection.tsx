@@ -372,7 +372,7 @@ export const BuildYourTiffinSection: React.FC<BuildYourTiffinSectionProps> = ({ 
               </div>
 
               {/* CENTER/RIGHT: REALISTIC 3D TIFFIN BOX STAGE WITH LIVE FOOD */}
-              <div className="flex-1 relative flex flex-col items-center justify-center min-h-[460px] sm:min-h-[520px] w-full">
+              <div className="flex-1 relative flex flex-col items-center justify-center min-h-115 sm:min-h-130 w-full">
                 
                 {/* Floating Action Controls on Top Right */}
                 <div className="absolute top-2 right-2 sm:top-3 sm:right-3 z-30 flex flex-col space-y-2 bg-white/95 backdrop-blur-md p-1.5 sm:p-2 rounded-2xl shadow-lg border border-slate-100 text-slate-700">
@@ -440,7 +440,7 @@ export const BuildYourTiffinSection: React.FC<BuildYourTiffinSectionProps> = ({ 
                     }}
                   >
                     {/* Photorealistic Stainless Steel Base Container */}
-                    <div className="relative w-[320px] sm:w-[380px] aspect-square flex items-center justify-center">
+                    <div className="relative w-[320px] sm:w-95 aspect-square flex items-center justify-center">
                       <img
                         src={isOpen ? "/tiffin_3d_open.jpg" : "/tiffin_3d_closed.jpg"}
                         alt="Realistic 3D Indian Stainless Steel Tiffin Dabba"
@@ -473,7 +473,7 @@ export const BuildYourTiffinSection: React.FC<BuildYourTiffinSectionProps> = ({ 
                               alt={selectedDal.name}
                               className="w-full h-full object-cover scale-110 animate-fade-in" 
                             />
-                            <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-black/30 pointer-events-none" />
+                            <div className="absolute inset-0 bg-linear-to-b from-black/25 via-transparent to-black/30 pointer-events-none" />
                           </div>
 
                           {/* TIER 2: RICE BOWL SURFACE */}
@@ -499,7 +499,7 @@ export const BuildYourTiffinSection: React.FC<BuildYourTiffinSectionProps> = ({ 
                               alt={selectedRice.name}
                               className="w-full h-full object-cover scale-110 animate-fade-in" 
                             />
-                            <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-black/30 pointer-events-none" />
+                            <div className="absolute inset-0 bg-linear-to-b from-black/25 via-transparent to-black/30 pointer-events-none" />
                           </div>
 
                           {/* TIER 3: SABZI BOWL SURFACE */}
@@ -525,7 +525,7 @@ export const BuildYourTiffinSection: React.FC<BuildYourTiffinSectionProps> = ({ 
                               alt={selectedSabzi.name}
                               className="w-full h-full object-cover scale-110 animate-fade-in" 
                             />
-                            <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-black/30 pointer-events-none" />
+                            <div className="absolute inset-0 bg-linear-to-b from-black/25 via-transparent to-black/30 pointer-events-none" />
                           </div>
 
                           {/* TIER 4: ROTI BOWL SURFACE */}
@@ -551,7 +551,7 @@ export const BuildYourTiffinSection: React.FC<BuildYourTiffinSectionProps> = ({ 
                               alt={selectedRoti.name}
                               className="w-full h-full object-cover scale-110 animate-fade-in" 
                             />
-                            <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-black/30 pointer-events-none" />
+                            <div className="absolute inset-0 bg-linear-to-b from-black/25 via-transparent to-black/30 pointer-events-none" />
                           </div>
 
                           {/* Dynamic Real-Time Interactive Badges on Left */}
@@ -755,7 +755,7 @@ export const BuildYourTiffinSection: React.FC<BuildYourTiffinSectionProps> = ({ 
                     >
                       {isSelected && (
                         <div className="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-orange-500 text-white flex items-center justify-center shadow-xs">
-                          <Check className="w-2.5 h-2.5 stroke-[3]" />
+                          <Check className="w-2.5 h-2.5 stroke-3" />
                         </div>
                       )}
                       <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden mb-2 flex items-center justify-center">
@@ -801,7 +801,7 @@ export const BuildYourTiffinSection: React.FC<BuildYourTiffinSectionProps> = ({ 
                     >
                       {isSelected && (
                         <div className="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-orange-500 text-white flex items-center justify-center shadow-xs">
-                          <Check className="w-2.5 h-2.5 stroke-[3]" />
+                          <Check className="w-2.5 h-2.5 stroke-3" />
                         </div>
                       )}
                       <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden mb-2 flex items-center justify-center">
@@ -847,7 +847,7 @@ export const BuildYourTiffinSection: React.FC<BuildYourTiffinSectionProps> = ({ 
                     >
                       {isSelected && (
                         <div className="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-orange-500 text-white flex items-center justify-center shadow-xs">
-                          <Check className="w-2.5 h-2.5 stroke-[3]" />
+                          <Check className="w-2.5 h-2.5 stroke-3" />
                         </div>
                       )}
                       <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden mb-2 flex items-center justify-center">
@@ -893,7 +893,7 @@ export const BuildYourTiffinSection: React.FC<BuildYourTiffinSectionProps> = ({ 
                     >
                       {isSelected && (
                         <div className="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-orange-500 text-white flex items-center justify-center shadow-xs">
-                          <Check className="w-2.5 h-2.5 stroke-[3]" />
+                          <Check className="w-2.5 h-2.5 stroke-3" />
                         </div>
                       )}
                       <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden mb-2 flex items-center justify-center">
@@ -953,9 +953,9 @@ export const BuildYourTiffinSection: React.FC<BuildYourTiffinSectionProps> = ({ 
                           : 'bg-orange-500 text-white group-hover:bg-orange-600'
                       }`}>
                         {isAdded ? (
-                          <Check className="w-3 h-3 stroke-[3]" />
+                          <Check className="w-3 h-3 stroke-3" />
                         ) : (
-                          <Plus className="w-3 h-3 stroke-[3]" />
+                          <Plus className="w-3 h-3 stroke-3" />
                         )}
                       </div>
                     </button>
